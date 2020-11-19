@@ -75,6 +75,36 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AB044B092566C14E00D2E7F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB2553AB2565077F0008C595 /* Parameter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB044B0A2566C15900D2E7F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB2553802562DF440008C595 /* Search.storyboard */,
+				AB2553832562E0D10008C595 /* ProductCell.swift */,
+				AB2553842562E0D10008C595 /* ProductCell.xib */,
+				AB2553C3256585B00008C595 /* TypeCollectionViewCell.swift */,
+				AB2553C4256585B00008C595 /* TypeCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB044B0B2566C16200D2E7F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB25537C2562DEE20008C595 /* FilterViewController.swift */,
+				AB305F2B2565F480006334EE /* ShopTypeViewController.swift */,
+				AB2553782562DEC90008C595 /* SearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		AB2553412562D21C0008C595 = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +126,10 @@
 		AB25534C2562D21C0008C595 /* SearchFilterTokopedia */ = {
 			isa = PBXGroup;
 			children = (
+				AB044B0B2566C16200D2E7F7 /* Controller */,
+				AB044B0A2566C15900D2E7F7 /* View */,
+				AB044B092566C14E00D2E7F7 /* Model */,
 				AB25538E2564C57A0008C595 /* Helper */,
-				AB2553772562DE820008C595 /* Filter */,
-				AB2553752562DE4B0008C595 /* Search */,
 				AB25534D2562D21C0008C595 /* AppDelegate.swift */,
 				AB25534F2562D21C0008C595 /* SceneDelegate.swift */,
 				AB2553512562D21C0008C595 /* ViewController.swift */,
@@ -108,37 +139,6 @@
 				AB25535B2562D21E0008C595 /* Info.plist */,
 			);
 			path = SearchFilterTokopedia;
-			sourceTree = "<group>";
-		};
-		AB2553752562DE4B0008C595 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				AB25537F2562DF030008C595 /* View */,
-				AB2553782562DEC90008C595 /* SearchViewController.swift */,
-				AB2553AB2565077F0008C595 /* Parameter.swift */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		AB2553772562DE820008C595 /* Filter */ = {
-			isa = PBXGroup;
-			children = (
-				AB25537C2562DEE20008C595 /* FilterViewController.swift */,
-				AB2553C3256585B00008C595 /* TypeCollectionViewCell.swift */,
-				AB2553C4256585B00008C595 /* TypeCollectionViewCell.xib */,
-				AB305F2B2565F480006334EE /* ShopTypeViewController.swift */,
-			);
-			path = Filter;
-			sourceTree = "<group>";
-		};
-		AB25537F2562DF030008C595 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AB2553802562DF440008C595 /* Search.storyboard */,
-				AB2553832562E0D10008C595 /* ProductCell.swift */,
-				AB2553842562E0D10008C595 /* ProductCell.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		AB25538E2564C57A0008C595 /* Helper */ = {

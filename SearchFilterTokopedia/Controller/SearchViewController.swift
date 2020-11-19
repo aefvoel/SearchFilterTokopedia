@@ -101,6 +101,5 @@ extension SearchViewController: FilterDelegate {
         params = param
         searchResults.removeAll()
         fetchData(params: params)
-        print(params)
     }
 }

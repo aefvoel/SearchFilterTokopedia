@@ -104,7 +104,6 @@ extension FilterViewController: UICollectionViewDataSource, UICollectionViewDele
 extension FilterViewController: FilterDelegate {
     func setParamData(param: Parameter) {
         params = param
-        print(param)
     }
 }
 extension FilterViewController: RangeSeekSliderDelegate {
