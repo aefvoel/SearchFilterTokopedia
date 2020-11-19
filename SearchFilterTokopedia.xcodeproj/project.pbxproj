@@ -3,19 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		414A91765F5035CDDAB9AA56 /* Pods_SearchFilterTokopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4DC48C2E8D296266F2DB40 /* Pods_SearchFilterTokopedia.framework */; };
 		AB25534E2562D21C0008C595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25534D2562D21C0008C595 /* AppDelegate.swift */; };
 		AB2553502562D21C0008C595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25534F2562D21C0008C595 /* SceneDelegate.swift */; };
 		AB2553522562D21C0008C595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2553512562D21C0008C595 /* ViewController.swift */; };
 		AB2553552562D21C0008C595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2553532562D21C0008C595 /* Main.storyboard */; };
 		AB2553572562D21E0008C595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2553562562D21E0008C595 /* Assets.xcassets */; };
 		AB25535A2562D21E0008C595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2553582562D21E0008C595 /* LaunchScreen.storyboard */; };
+		AB2553792562DEC90008C595 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2553782562DEC90008C595 /* SearchViewController.swift */; };
+		AB25537D2562DEE20008C595 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25537C2562DEE20008C595 /* FilterViewController.swift */; };
+		AB2553812562DF440008C595 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2553802562DF440008C595 /* Search.storyboard */; };
+		AB2553852562E0D10008C595 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2553832562E0D10008C595 /* ProductCell.swift */; };
+		AB2553862562E0D10008C595 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2553842562E0D10008C595 /* ProductCell.xib */; };
+		AB2553902564C5940008C595 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25538F2564C5940008C595 /* ApiRequest.swift */; };
+		AB2553AC2565077F0008C595 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2553AB2565077F0008C595 /* Parameter.swift */; };
+		AB2553C5256585B00008C595 /* TypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2553C3256585B00008C595 /* TypeCollectionViewCell.swift */; };
+		AB2553C6256585B00008C595 /* TypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2553C4256585B00008C595 /* TypeCollectionViewCell.xib */; };
+		AB2553C9256586950008C595 /* RoundedHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2553C8256586950008C595 /* RoundedHelper.swift */; };
+		AB2553CE2565935E0008C595 /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2553CD2565935E0008C595 /* CheckboxButton.swift */; };
+		AB305F2C2565F480006334EE /* ShopTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB305F2B2565F480006334EE /* ShopTypeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030BC2B3DD553F6D2F8FA27A /* Pods-SearchFilterTokopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchFilterTokopedia.debug.xcconfig"; path = "Target Support Files/Pods-SearchFilterTokopedia/Pods-SearchFilterTokopedia.debug.xcconfig"; sourceTree = "<group>"; };
+		7A58A9B3A88DE09D0EBDFF94 /* Pods-SearchFilterTokopedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchFilterTokopedia.release.xcconfig"; path = "Target Support Files/Pods-SearchFilterTokopedia/Pods-SearchFilterTokopedia.release.xcconfig"; sourceTree = "<group>"; };
+		7C4DC48C2E8D296266F2DB40 /* Pods_SearchFilterTokopedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchFilterTokopedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB25534A2562D21C0008C595 /* SearchFilterTokopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchFilterTokopedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB25534D2562D21C0008C595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB25534F2562D21C0008C595 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +40,18 @@
 		AB2553562562D21E0008C595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB2553592562D21E0008C595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB25535B2562D21E0008C595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2553782562DEC90008C595 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AB25537C2562DEE20008C595 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		AB2553802562DF440008C595 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		AB2553832562E0D10008C595 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		AB2553842562E0D10008C595 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		AB25538F2564C5940008C595 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		AB2553AB2565077F0008C595 /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		AB2553C3256585B00008C595 /* TypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB2553C4256585B00008C595 /* TypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		AB2553C8256586950008C595 /* RoundedHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedHelper.swift; sourceTree = "<group>"; };
+		AB2553CD2565935E0008C595 /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		AB305F2B2565F480006334EE /* ShopTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTypeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414A91765F5035CDDAB9AA56 /* Pods_SearchFilterTokopedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8791D7E3486CBFB629562277 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				030BC2B3DD553F6D2F8FA27A /* Pods-SearchFilterTokopedia.debug.xcconfig */,
+				7A58A9B3A88DE09D0EBDFF94 /* Pods-SearchFilterTokopedia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AB2553412562D21C0008C595 = {
 			isa = PBXGroup;
 			children = (
 				AB25534C2562D21C0008C595 /* SearchFilterTokopedia */,
 				AB25534B2562D21C0008C595 /* Products */,
+				8791D7E3486CBFB629562277 /* Pods */,
+				ED8C9230596C32ECA51F6F9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +96,9 @@
 		AB25534C2562D21C0008C595 /* SearchFilterTokopedia */ = {
 			isa = PBXGroup;
 			children = (
+				AB25538E2564C57A0008C595 /* Helper */,
+				AB2553772562DE820008C595 /* Filter */,
+				AB2553752562DE4B0008C595 /* Search */,
 				AB25534D2562D21C0008C595 /* AppDelegate.swift */,
 				AB25534F2562D21C0008C595 /* SceneDelegate.swift */,
 				AB2553512562D21C0008C595 /* ViewController.swift */,
@@ -67,6 +110,55 @@
 			path = SearchFilterTokopedia;
 			sourceTree = "<group>";
 		};
+		AB2553752562DE4B0008C595 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AB25537F2562DF030008C595 /* View */,
+				AB2553782562DEC90008C595 /* SearchViewController.swift */,
+				AB2553AB2565077F0008C595 /* Parameter.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AB2553772562DE820008C595 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				AB25537C2562DEE20008C595 /* FilterViewController.swift */,
+				AB2553C3256585B00008C595 /* TypeCollectionViewCell.swift */,
+				AB2553C4256585B00008C595 /* TypeCollectionViewCell.xib */,
+				AB305F2B2565F480006334EE /* ShopTypeViewController.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		AB25537F2562DF030008C595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB2553802562DF440008C595 /* Search.storyboard */,
+				AB2553832562E0D10008C595 /* ProductCell.swift */,
+				AB2553842562E0D10008C595 /* ProductCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB25538E2564C57A0008C595 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AB25538F2564C5940008C595 /* ApiRequest.swift */,
+				AB2553C8256586950008C595 /* RoundedHelper.swift */,
+				AB2553CD2565935E0008C595 /* CheckboxButton.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		ED8C9230596C32ECA51F6F9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C4DC48C2E8D296266F2DB40 /* Pods_SearchFilterTokopedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB25535E2562D21E0008C595 /* Build configuration list for PBXNativeTarget "SearchFilterTokopedia" */;
 			buildPhases = (
+				A1140E3E9B8E502F874C7BDA /* [CP] Check Pods Manifest.lock */,
 				AB2553462562D21C0008C595 /* Sources */,
 				AB2553472562D21C0008C595 /* Frameworks */,
 				AB2553482562D21C0008C595 /* Resources */,
+				7E55CB3425372E51269F0385 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +220,56 @@
 			files = (
 				AB25535A2562D21E0008C595 /* LaunchScreen.storyboard in Resources */,
 				AB2553572562D21E0008C595 /* Assets.xcassets in Resources */,
+				AB2553862562E0D10008C595 /* ProductCell.xib in Resources */,
+				AB2553812562DF440008C595 /* Search.storyboard in Resources */,
+				AB2553C6256585B00008C595 /* TypeCollectionViewCell.xib in Resources */,
 				AB2553552562D21C0008C595 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E55CB3425372E51269F0385 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchFilterTokopedia/Pods-SearchFilterTokopedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchFilterTokopedia/Pods-SearchFilterTokopedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SearchFilterTokopedia/Pods-SearchFilterTokopedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1140E3E9B8E502F874C7BDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchFilterTokopedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB2553462562D21C0008C595 /* Sources */ = {
@@ -139,7 +278,16 @@
 			files = (
 				AB2553522562D21C0008C595 /* ViewController.swift in Sources */,
 				AB25534E2562D21C0008C595 /* AppDelegate.swift in Sources */,
+				AB305F2C2565F480006334EE /* ShopTypeViewController.swift in Sources */,
+				AB2553792562DEC90008C595 /* SearchViewController.swift in Sources */,
+				AB2553C9256586950008C595 /* RoundedHelper.swift in Sources */,
+				AB2553AC2565077F0008C595 /* Parameter.swift in Sources */,
+				AB2553852562E0D10008C595 /* ProductCell.swift in Sources */,
+				AB2553C5256585B00008C595 /* TypeCollectionViewCell.swift in Sources */,
+				AB2553CE2565935E0008C595 /* CheckboxButton.swift in Sources */,
 				AB2553502562D21C0008C595 /* SceneDelegate.swift in Sources */,
+				AB2553902564C5940008C595 /* ApiRequest.swift in Sources */,
+				AB25537D2562DEE20008C595 /* FilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +431,14 @@
 		};
 		AB25535F2562D21E0008C595 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 030BC2B3DD553F6D2F8FA27A /* Pods-SearchFilterTokopedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A97SVDB2Q9;
 				INFOPLIST_FILE = SearchFilterTokopedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +446,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = id.toriqwah.SearchFilterTokopedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AB2553602562D21E0008C595 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A58A9B3A88DE09D0EBDFF94 /* Pods-SearchFilterTokopedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A97SVDB2Q9;
 				INFOPLIST_FILE = SearchFilterTokopedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = id.toriqwah.SearchFilterTokopedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
