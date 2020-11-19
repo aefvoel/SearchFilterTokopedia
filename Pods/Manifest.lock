@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.0.5)
+  - RangeSeekSlider (1.8.0)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
+  - RangeSeekSlider
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - RangeSeekSlider
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: d967c131ab5c3caf52148ca489408b822badfdee
+PODFILE CHECKSUM: 02361b79f3e01656e9ab36e51b4059a297ba5736
 
 COCOAPODS: 1.10.0

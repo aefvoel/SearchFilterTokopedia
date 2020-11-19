@@ -15,9 +15,10 @@ class ShopTypeViewController: UIViewController {
     @IBOutlet weak var officialCheckbox: CheckboxButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func viewDidAppear(_ animated: Bool) {
         setupView()
     }
-
     func setupView(){
         goldCheckbox.on = params?.fshop == "2" ? true : false
         officialCheckbox.on = params?.official == true ? true : false
@@ -34,6 +35,10 @@ class ShopTypeViewController: UIViewController {
     @IBAction func applyBtton(_ sender: UIButton) {
         delegate?.setParamData(param: params!)
         self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func onReset(_ sender: UIButton) {
+        params = Parameter()
+        self.viewDidAppear(true)
     }
     
 }

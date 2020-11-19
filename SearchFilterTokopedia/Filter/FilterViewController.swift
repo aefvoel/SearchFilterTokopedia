@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RangeSeekSlider
 
 class FilterViewController: UIViewController {
 
@@ -14,16 +15,18 @@ class FilterViewController: UIViewController {
             typeCollectionView.reloadData()
         }
     }
-    var type = [String]()
     var params: Parameter?
     var delegate: FilterDelegate?
+    @IBOutlet weak var priceSlider: RangeSeekSlider!
     @IBOutlet weak var typeCollectionView: UICollectionView!
+    @IBOutlet weak var wholeSaleSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupView()
     }
     override func viewDidAppear(_ animated: Bool) {
         tagsArray.removeAll()
+        self.priceSlider.setNeedsLayout()
         setupView()
         
     }
@@ -37,10 +40,15 @@ class FilterViewController: UIViewController {
         if let flowLayout = self.typeCollectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 144, height: 33)
         }
+        priceSlider.delegate = self
+        priceSlider.selectedMinValue = NumberFormatter().number(from: params!.pmin) as! CGFloat
+        priceSlider.selectedMaxValue = NumberFormatter().number(from: params!.pmax) as! CGFloat
+        priceSlider.numberFormatter.numberStyle = .currency
+        priceSlider.numberFormatter.locale = Locale(identifier: "id_ID")
+        params?.wholesale == true ? wholeSaleSwitch.setOn(true, animated: true) : wholeSaleSwitch.setOn(false, animated: true)
         if params?.official == true {
             tagsArray.append("Official Store")
         }
-        
         if params?.fshop == "2" {
             tagsArray.append("Gold Merchant")
         }
@@ -56,6 +64,9 @@ class FilterViewController: UIViewController {
         delegate?.setParamData(param: params!)
         self.navigationController?.popViewController(animated: true)
     }
+    @IBAction func wholesaleSwitch(_ sender: UISwitch) {
+        params?.wholesale = sender.isOn ? true : false
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? ShopTypeViewController {
             vc.delegate = self
@@ -68,6 +79,10 @@ class FilterViewController: UIViewController {
             self.params?.fshop = self.tagsArray.contains("Gold Merchant") ? "2" : "1"
             self.params?.official = self.tagsArray.contains("Official Store") ? true : false
         }
+    }
+    @IBAction func onReset(_ sender: UIButton) {
+        params = Parameter()
+        self.viewDidAppear(true)
     }
 }
 extension FilterViewController: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -92,4 +107,14 @@ extension FilterViewController: FilterDelegate {
         print(param)
     }
 }
+extension FilterViewController: RangeSeekSliderDelegate {
+
+    func rangeSeekSlider(_ slider: RangeSeekSlider, didChange minValue: CGFloat, maxValue: CGFloat) {
+        if slider === priceSlider {
+            params?.pmin = String(format: "%.0f", minValue)
+            params?.pmax = String(format: "%.0f", maxValue)
+        }
+    }
+}
+
 

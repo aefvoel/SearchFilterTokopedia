@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "452723DE2F1CDB892070657193EF18EB"
-               BuildableName = "Pods_SearchFilterTokopedia.framework"
-               BlueprintName = "Pods-SearchFilterTokopedia"
+               BlueprintIdentifier = "4AFB864B337D1F74C1D79F4FC8F6C67F"
+               BuildableName = "RangeSeekSlider.framework"
+               BlueprintName = "RangeSeekSlider"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
